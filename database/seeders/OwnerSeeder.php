@@ -14,7 +14,7 @@ class OwnerSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('owners')->insert(
+        DB::table('owners')->insert([
             [
                 'name' => 'test1',
                 'email' => 'test1@test.com',
@@ -51,6 +51,6 @@ class OwnerSeeder extends Seeder
                 'password' => Hash::make('password123'),
                 'created_at' => '2021/01/01 11:11:11'    
             ],
-        );
+        ]);
     }
 }

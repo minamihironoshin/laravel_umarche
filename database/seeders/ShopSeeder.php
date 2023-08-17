@@ -13,7 +13,7 @@ class ShopSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('shops')->insert(
+        DB::table('shops')->insert([
             [
                 'owner_id' => 1,
                 'name' => 'ここに店名が入ります',
@@ -28,6 +28,6 @@ class ShopSeeder extends Seeder
                 'filename' => '',
                 'is_selling' => true
             ],
-        );
+        ]);
     }
 }
